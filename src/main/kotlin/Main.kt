@@ -3,6 +3,10 @@ fun main() {
 additionNumbers()
 names("Saru","staicy","serah")
     println()
+     var details= mutableListOf(Person("Nancy",21,56.5,60.3),
+        Person("Saru",20,4.6,56.5),
+        Person("Wawasi",22,5.7,58.3))
+     var age=  details.sortedByDescending { it.age }
 }
 //
 //1. Create one function that is given the below array:
@@ -21,16 +25,14 @@ fun additionNumbers() {
 //2. Given a list of Person objects, each with the attributes, name, age, height, and weight.
 //Sort the list in order of descending age (2 points)
 class Person(name: String,age: Int,height: Double,weight: Double){
-    var details= mutableListOf(Person("Nancy",21,56.5,60.3),
-        Person("Saru",20,4.6,56.5),
-        Person("Wawasi",22,5.7,58.3))
+   
 
 }
 //
 //3. Create a function that takes in 3 names and returns a string array
 //containing all 3 names. (2 points)
 fun names(name1: String,name2: String,name3: String): String{
-    var students = (name1+name2+name3)
+    var students = (name1+" "+name2+" "+name3)
     return students
 }
 //
